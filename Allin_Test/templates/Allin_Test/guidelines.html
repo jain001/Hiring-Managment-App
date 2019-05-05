@@ -1,0 +1,19 @@
+{% extends "Allin_Test/base.html" %}
+{% block content %}
+        <article class="media content-section">
+          <div class="media-body">
+            <div class="article-metadata">
+              <h1 class="display-1">Instructions</h1>
+            </div>
+              <p class="article-content">The coding test, once unlocked, should be valid only for 72 hours (this should be admin configurable). The candidates should then be able to submit their solutions within 72 hours. The submissions should contain the following:</p>
+              <ul class="list-group list-group-flush">
+                  <li class="list-group-item">A zip file containing the source code of what they’ve developed</li>
+                  <li class="list-group-item">A link to a video containing a short (< 5 - 10 min) demo of what they’ve developed</li>
+              </ul>
+              <h3 class="display-4">Make your choice</h3>
+              <a href="{% url 'coding' %}"  class="btn btn-info" role="button"> Test</a>
+               <a href="{% url 'logout' %}" class="btn btn-info" role="button">Logout</a>
+
+          </div>
+        </article>
+{% endblock content %}
